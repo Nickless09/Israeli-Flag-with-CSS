@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    
+.flag {
+    font-size: 99px;
+    line-height: 160px;
+    width: 220px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.iL-flag {
+    width: 100%;
+    padding-bottom: 72.727%;
+    background-color: white;
+    position: relative;
+    margin: 0;
+}
+
+.iL-flag::before,
+.iL-flag::after {
+    content: ' ';
+    position: absolute;
+    background-color: blue;
+    width: 100%;
+    height: 15.625%;
+}
+
+.iL-flag::before {
+    top: 9.375%;
+}
+
+.iL-flag::after {
+    bottom: 9.375%;
+}
+
+.iL-flag .iL-star {
+    position: absolute;
+    color: blue;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+  </style>
+</head>
+
+<body>
+<div class="flag">
+  <section role="region" aria-hidden="true" class="iL-flag">
+    <div class="iL-star">
+      ✡
+    </div>
+  </section>
+</div>
+</body>
+
+</html>
